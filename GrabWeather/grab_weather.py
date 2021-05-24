@@ -72,7 +72,4 @@ months = {
     '12': 'Dec'
 }
 
-f = open('webpage.txt', 'a')
-f.write(res.text)
-
 print(GREEN, time.ctime())
