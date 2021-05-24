@@ -6,7 +6,6 @@
 ###########################
 
 from datetime import date
-import webbrowser
 import platform
 import requests
 import time
@@ -72,5 +71,8 @@ months = {
     '11': 'Nov',
     '12': 'Dec'
 }
+
+f = open('webpage.txt', 'a')
+f.write(res.text)
 
 print(GREEN, time.ctime())
