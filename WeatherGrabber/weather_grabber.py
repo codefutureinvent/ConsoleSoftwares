@@ -57,7 +57,7 @@ file_text = Path('webpage.txt').read_text()
 city_compiler = re.compile(r'weather for \w+')
 mo = city_compiler.search(file_text)
 
-temperature = re.findall(r'\d\d°\w', file_text)
+temperature = re.findall(r'\d+°\w', file_text)
 
 try:
     print(GREEN, f'{mo.group().title()} - {temperature[0]}')
