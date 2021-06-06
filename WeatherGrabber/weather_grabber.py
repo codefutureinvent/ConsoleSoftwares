@@ -51,6 +51,7 @@ city_compiler = re.compile(r'weather for \w+')
 mo = city_compiler.search(file_text)
 temperature = re.findall(r'\d+°\w', file_text)
 
+# App starting point for the user
 clear()
 print(BLUE, 'Welcome To The Weather Grabber Console App')
 year = time.ctime().split()[-1]
