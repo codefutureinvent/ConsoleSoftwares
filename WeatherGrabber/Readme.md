@@ -1,6 +1,7 @@
 # Weather Grabber Console App
 
 This software goal is to grab your current weather and display out to your console via the `requests` library.
+In the API scheme style.
 
 Current Version: 1.0.0
 
