@@ -63,4 +63,7 @@ except AttributeError:
     print(RED, 'No city was found!')
 print(GREEN, '{}/{}/{}'.format(month, day, year))
 
+current_time = re.findall(r'\d\d:\d\d:\d\d', time.ctime())
+print('',*current_time, sep=' ')
+
 f.close()
