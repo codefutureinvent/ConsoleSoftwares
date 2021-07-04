@@ -30,7 +30,7 @@ humidity = browser.find_element_by_css_selector('.wtsRwe > div:nth-child(2)').te
 wind = browser.find_element_by_css_selector('.wtsRwe > div:nth-child(3)').text
 city_name = browser.find_element_by_css_selector('#wob_loc').text
 weather = browser.find_element_by_css_selector('#wob_dcp').text
-browser.quit()
+
 
 # Getting the current day
 year = time.ctime().split()[-1]
@@ -44,6 +44,6 @@ print(f'{rain}')
 print(f'{humidity}')
 print(f'{wind}')
 
-# Text distancing
-for i in range(10):
-    print()
+
+browser.quit()
+sys.exit()
